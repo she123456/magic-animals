@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>动物的故事</title>
+		<link href="css/1.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/new.js"></script>
+
+		<style>
+			body {
+				margin: 0px;
+			}
+			
+			.body {
+				width: 1920px;
+				height: 3200px;
+				margin: 0px;
+			}
+			
+			.nav {
+				width: 1920px;
+				height: 138px;
+				background-color: #040403;
+			}
+			
+			.main4 {
+				width: 1920px;
+				height: 2200px;
+				background-image: url(img/5/面板.png);
+			}
+			
+			.bottom {
+				width: 1920px;
+				height: 395px;
+				background-color: #040403;
+			}
+			
+			.box4 {
+				position: absolute;
+				margin-left: 512px;
+				margin-top: 31px;
+			}
+			
+			.mask4 {
+				position: absolute;
+				display: none;
+			}
+			
+			.sub4 {
+				position: absolute;
+				color: white;
+				margin-left: 378px;
+				display: none;
+				font-size: 30px;
+			}
+			
+			.txtShow .mask4,
+			.txtShow .sub4 {
+				display: block;
+				margin-top: -300px;
+			}
+			
+			.box5 {
+				position: absolute;
+				margin-left: 128px;
+				margin-top: 721px;
+			}
+			
+			.mask5 {
+				position: absolute;
+				height: 20px;
+				width: 100px;
+				display: none;
+			}
+			
+			.sub5 {
+				position: absolute;
+				color: white;
+				margin-left: 378px;
+				display: none;
+				font-size: 30px;
+			}
+			
+			.txtShow .mask5,
+			.txtShow .sub5 {
+				display: block;
+				margin-top: -280px;
+			}
+			
+			.box6 {
+				position: absolute;
+				margin-left: 1034px;
+				margin-top: 721px;
+			}
+			
+			.mask6 {
+				position: absolute;
+				height: 20px;
+				width: 100px;
+				display: none;
+			}
+			
+			.sub6 {
+				position: absolute;
+				color: white;
+				margin-left: 378px;
+				display: none;
+				font-size: 30px;
+			}
+			
+			.txtShow .mask6,
+			.txtShow .sub6 {
+				display: block;
+				margin-top: -350px;
+				margin-left: 190px;
+			}
+			
+			.box7 {
+				position: absolute;
+				margin-left: 94px;
+				margin-top: 1183px;
+			}
+			
+			.mask7 {
+				position: absolute;
+				height: 20px;
+				width: 100px;
+				display: none;
+			}
+			
+			.sub7 {
+				position: absolute;
+				color: white;
+				margin-left: 378px;
+				display: none;
+				font-size: 30px;
+			}
+			
+			.txtShow .mask7,
+			.txtShow .sub7 {
+				display: block;
+				margin-top: -500px;
+				margin-left: 150px;
+			}
+			
+			.box8 {
+				position: absolute;
+				margin-left: 511px;
+				margin-top: 1183px;
+			}
+			
+			.mask8 {
+				position: absolute;
+				height: 20px;
+				width: 100px;
+				display: none;
+			}
+			
+			.sub8 {
+				position: absolute;
+				color: white;
+				margin-left: 378px;
+				display: none;
+				font-size: 30px;
+			}
+			
+			.txtShow .mask8,
+			.txtShow .sub8 {
+				display: block;
+				margin-top: -320px;
+				margin-left: 240px;
+			}
+			
+			.box9 {
+				position: absolute;
+				margin-left: 1128px;
+				margin-top: 1420px;
+			}
+			
+			.mask9 {
+				position: absolute;
+				height: 20px;
+				width: 100px;
+				display: none;
+			}
+			
+			.sub9 {
+				position: absolute;
+				color: white;
+				margin-left: 378px;
+				display: none;
+				font-size: 30px;
+			}
+			
+			.txtShow .mask9,
+			.txtShow .sub9 {
+				display: block;
+				margin-top: -230px;
+				margin-left: 250px;
+			}
+			
+			.aqw1 {
+				color: #000000;
+			}
+			
+			.aqw1:hover {
+				color: red;
+			}
+		</style>
+		<script>
+			window.onload = function() {
+				var oDiv = document.getElementById('imgBox4');
+				oDiv.onmouseover = function() {
+					this.className = 'box4 txtShow';
+				};
+				oDiv.onmouseout = function() {
+					this.className = 'box4';
+				}
+
+				var oDiv = document.getElementById('imgBox5');
+				oDiv.onmouseover = function() {
+					this.className = 'box5 txtShow';
+				};
+				oDiv.onmouseout = function() {
+					this.className = 'box5';
+				}
+
+				var oDiv = document.getElementById('imgBox6');
+				oDiv.onmouseover = function() {
+					this.className = 'box6 txtShow';
+				};
+				oDiv.onmouseout = function() {
+					this.className = 'box6';
+				}
+
+				var oDiv = document.getElementById('imgBox7');
+				oDiv.onmouseover = function() {
+					this.className = 'box7 txtShow';
+				};
+				oDiv.onmouseout = function() {
+					this.className = 'box7';
+				}
+
+				var oDiv = document.getElementById('imgBox8');
+				oDiv.onmouseover = function() {
+					this.className = 'box8 txtShow';
+				};
+				oDiv.onmouseout = function() {
+					this.className = 'box8';
+				}
+
+				var oDiv = document.getElementById('imgBox9');
+				oDiv.onmouseover = function() {
+					this.className = 'box9 txtShow';
+				};
+				oDiv.onmouseout = function() {
+					this.className = 'box9';
+				}
+			}
+		</script>
+
+	</head>
+
+	<body>
+		<div class="body">
+			<div class="nav">
+				<img style="position: absolute;margin-left: 48px;margin-top: 13px;" src="img/1/图标.png">
+				<a href="#" class="a1">首页</a>
+				<a href="#" class="a2">图片</a>
+				<a href="#" class="a3">讨论区</a>
+				<a href="#" class="a4">分享区</a>
+				<a href="sum.html" class="a5">作品集</a>
+				<a href="stroly.html" class="a13">我们的故事</a>
+
+				<a href="JavaScript:void(0)" onclick="openDialog()"><img src="img/1/登录之前.png" style="position: absolute;margin-left: 1420px;margin-top: 65px;">
+				</a>
+				<img src="img/4/猫爪.png" style="width:80px;height:80px;position: absolute;margin-left: 1800px;margin-top: 38px;">
+
+			</div>
+			<div class="main4">
+				<div style="position: absolute;width:1920px;height:31px ;background-color: #BFBBAF;"></div>
+				<img src="img/5/左鸟.png" style="position: absolute;margin-left: 31px;margin-top: 48px;">
+				<img src="img/5/右鸟.png" style="position: absolute;margin-left: 1388px;margin-top: 48px;">
+				<img src="img/5/透明框.png" style="position: absolute;margin-left:293px ;margin-top:1990px ;">
+
+				<div id="imgBox4" class="box4">
+					<img src="img/5/女孩.png">
+					<div class="mask4"></div>
+					<p class="sub4">V I E W</p>
+				</div>
+				<img src="img/5/绿色相框.png" style="position: absolute;margin-left: 69px;margin-top: 700px;">
+				<div id="imgBox5" class="box5">
+					<img src="img/5/猫啊.png">
+					<div class="mask5"></div>
+					<p class="sub5">V I E W</p>
+				</div>
+
+				<div id="imgBox8" class="box8">
+					<img src="img/5/海豹啊.png">
+					<div class="mask8"></div>
+					<p class="sub8">V I E W</p>
+				</div>
+
+				<div id="imgBox6" class="box6">
+					<img src="img/5/羊啊.png">
+					<div class="mask6"></div>
+					<p class="sub6">V I E W</p>
+				</div>
+
+				<div id="imgBox7" class="box7">
+					<img src="img/5/猫头鹰啊.png">
+					<div class="mask7"></div>
+					<p class="sub7">V I E W</p>
+				</div>
+
+				<div id="imgBox9" class="box9">
+					<img src="img/5/手猫啊.png">
+					<div class="mask9"></div>
+					<p class="sub9">V I E W</p>
+				</div>
+
+				<pre style="position: absolute;margin-left:460px ; font-family:castellar;margin-top: 2045px;font-size:28px ;font-weight:bolder ;">
+约翰 默尔：					
+				</pre>
+				<pre style="position: absolute;margin-left:607px ;margin-top: 2050px;font-size:25px ;font-weight:600 ;">
+人类的爱，希望和恐惧与动物没有什么两样，他们就像阳光了，
+</pre>
+				<pre style="position: absolute;margin-left:462px ; margin-top: 2100px;font-size:25px ;font-weight:600;">
+处于同源，落与同地。
+</pre>
+
+				<a class="aqw1" href="#">
+					<pre style="font-style: oblique;margin-left: 1604px;margin-top: 980px;font-size: 40px;position:absolute;line-height: 80px;font-weight: bolder;">
+Write down
+Your
+Story!</pre>
+				</a>
+			</div>
+			<div class="bottom">
+				<img style="position: absolute;margin-left: 691px;margin-top: 67px;" src="img/1/图标.png">
+				<a href="#" class="a7">让我们成为朋友</a>
+				<a href="#" class="a8">联系</a>
+				<a href="#" class="a9">使用条款</a>
+				<a href="#" class="a10">用户</a>
+				<a href="#" class="a11">隐私</a>
+				<img src="img/4/猫爪.png" style="position: absolute;margin-left:1431px ;margin-top:248px ;">
+				<a href="#" class="a12">Cookie同意</a>
+			</div>
+		</div>
+		<script type="text/javascript"></script>
+	</body>
+
+</html>
